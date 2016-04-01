@@ -1,11 +1,8 @@
 function get_id(str) {
 	var id = str.split('v=')[1];
-	if (!id) {
-		return id;
-	}
-	var ampPos = id.indexOf('&');
-	if (ampPos != -1) {
-		id = id.substring(0, ampPos);
+	var pos = id.indexOf('&');
+	if (pos != -1) {
+		id = id.substring(0, pos);
 	}
 	return id;
 }
@@ -52,7 +49,7 @@ jQuery(function($) {
 	if (!video_id) {
 		return;
 	}
-	var a = get_a(video_id, ' - - ☯');
+	var a = get_a(video_id, ' - - ⊕');
 	a.style.verticalAlign = 'middle';
 	var spot = document.getElementById('watch7-subscription-container');
 	spot.appendChild(a);
