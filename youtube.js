@@ -16,26 +16,30 @@ function get_a(id, text) {
 	a.appendChild(document.createTextNode(text));
 	return a;
 }
-
-var links = document.querySelectorAll('div.yt-lockup-video h3.yt-lockup-title a.yt-uix-sessionlink');
-var length = links.length;
-
-for(var i=0; i<length; i++) {
-	var id = get_id(links[i].href);
-	if (!id) {
-		continue;
+function list(selector) {
+	var links = document.querySelectorAll(selector);
+	var length = links.length;
+	
+	for(var i=0; i<length; i++) {
+		var id = get_id(links[i].href);
+		if (!id) {
+			continue;
+		}
+		var a = get_a(id, '☯');
+		a.style.fontSize = '26px';
+		a.style.position = 'absolute';
+		a.style.bottom = '5px';
+		a.style.right = '0';
+		
+		var par = links[i].parentElement.parentElement;
+		par.appendChild(a);
 	}
-	var a = get_a(id, '☯');
-	a.style.fontSize = '26px';
-	a.style.position = 'absolute';
-	a.style.bottom = '5px';
-	a.style.right = '0';
-	console.log(a);
-	var par = links[i].parentElement.parentElement;
-	par.appendChild(a);
 }
 
 setTimeout(function() {
+	list('div.yt-lockup-video h3.yt-lockup-title a.yt-uix-sessionlink');
+	list('ul.video-list li.video-list-item a.yt-uix-sessionlink');
+	
 	var video_id = get_id(window.location.search);
 	if (!video_id) {
 		return;
