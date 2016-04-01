@@ -12,7 +12,8 @@ function get_id(str) {
 function get_a(id, text) {
 	var a = document.createElement('a');
 	a.href = 'https://youtube.com/embed/' + id + '?autoplay=1';
-	a.title = 'Embedded Video';
+	a.title = 'Full Window Video';
+	a.style.fontSize = '20px';
 	a.appendChild(document.createTextNode(text));
 	return a;
 }
@@ -25,8 +26,7 @@ function list(selector) {
 		if (!id) {
 			continue;
 		}
-		var a = get_a(id, '☯');
-		a.style.fontSize = '26px';
+		var a = get_a(id, '⊕');
 		a.style.position = 'absolute';
 		a.style.bottom = '5px';
 		a.style.right = '0';
@@ -45,7 +45,6 @@ jQuery(function(&) {
 		return;
 	}
 	var a = get_a(video_id, ' - - ☯');
-	a.style.fontSize = '20px';
 	a.style.verticalAlign = 'middle';
 	var spot = document.getElementById('watch7-subscription-container');
 	spot.appendChild(a);
