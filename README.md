@@ -12,4 +12,4 @@ This adds a link to the embedded video so you can watch it full window (not full
 
 This eleminates a ton of empty space near the top of the page.
 
-![Municipal online payments example 1](https://raw.githubusercontent.com/knickers/styler/master/img/mockup-0-320.png) ![Municipal online payments example 2](https://raw.githubusercontent.com/knickers/styler/master/img/mockup-2-320.png)
+![Municipal online payments example 1](https://raw.githubusercontent.com/knickers/styler/master/img/municipal-online-payment-0.png) ![Municipal online payments example 2](https://raw.githubusercontent.com/knickers/styler/master/img/municipal-online-payment-2.png)
