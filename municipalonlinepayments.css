@@ -1,0 +1,18 @@
+#site_title {
+	margin-top: -30px;
+}
+#site_title a img {
+	width: 150px;
+	height: 150px;
+	margin-left: -10px;
+}
+#menu {
+	margin-top: -145px;
+	padding-left: 160px
+}
+#breadcrumbs {
+	padding-left: 160px;
+}
+h2#page_heading {
+	padding-left: 160px;
+}
