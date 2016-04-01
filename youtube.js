@@ -36,7 +36,7 @@ function list(selector) {
 	}
 }
 
-setTimeout(function() {
+jQuery(function(&) {
 	list('div.yt-lockup-video h3.yt-lockup-title a.yt-uix-sessionlink');
 	list('ul.video-list li.video-list-item a.yt-uix-sessionlink');
 	
@@ -49,4 +49,4 @@ setTimeout(function() {
 	a.style.verticalAlign = 'middle';
 	var spot = document.getElementById('watch7-subscription-container');
 	spot.appendChild(a);
-}, 1000);
+});
