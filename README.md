@@ -1,6 +1,6 @@
 # styler
 
-This is a collection of scripts I use in the chrome [styler](https://chrome.google.com/webstore/detail/styler/bogdgcfoocbajfkjjolkmcdcnnellpkb) plugin.
+This is a collection of scripts I use in the google chrome [styler extension](https://chrome.google.com/webstore/detail/styler/bogdgcfoocbajfkjjolkmcdcnnellpkb).
 
 ### YouTube
 
