@@ -1,5 +1,8 @@
 function get_id(str) {
 	var id = str.split('v=')[1];
+	if (!id) {
+		return;
+	}
 	var pos = id.indexOf('&');
 	if (pos != -1) {
 		id = id.substring(0, pos);
@@ -36,8 +39,7 @@ function list(selector, num_parents) {
 		par.appendChild(a);
 	}
 }
-
-jQuery(function($) {
+function run() {
 	// Subscriptions list
 	list('div.yt-lockup-video h3.yt-lockup-title a.yt-uix-sessionlink', 2);
 	// Suggestions sidebar list
@@ -53,4 +55,17 @@ jQuery(function($) {
 	a.style.verticalAlign = 'middle';
 	var spot = document.getElementById('watch7-subscription-container');
 	spot.appendChild(a);
+}
+
+jQuery(function($) {
+	run();
+	
+	// YouTube asynchronous page navigation.
+	// http://stackoverflow.com/questions/18397962/chrome-extension-is-not-loading-on-browser-navigation-at-youtube/18398921#18398921
+	var body = document.body || document.documentElement;
+	body.addEventListener('transitionend', function(event) { // TransitionEvent
+		if (event.propertyName === 'width' && event.target.id === 'progress') {
+			setTimeout(run, 2000);
+		}
+	}, true);
 });
