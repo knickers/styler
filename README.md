@@ -8,6 +8,12 @@ This adds a link to the embedded version of videos, so they are watchable in ful
 
 ![YouTube example](https://raw.githubusercontent.com/knickers/styler/master/img/youtube-1.png)
 
+### Utah Special Plates
+
+This adds links to the full size images of the Utah special group licence plates from this page: [http://dmv.utah.gov/plates/special-group](http://dmv.utah.gov/plates/special-group)
+
+![Special plates example](https://raw.githubusercontent.com/knickers/styler/master/img/utah-special-plates.png)
+
 ### Municipal Online Payments
 
 This eleminates a ton of empty space near the top of the page.
