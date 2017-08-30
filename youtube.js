@@ -24,6 +24,9 @@ function list(selector, num_parents) {
 	var length = links.length;
 	
 	for(var i=0; i<length; i++) {
+		if (!links[i].href) {
+			continue;
+		}
 		var id = get_id(links[i].href);
 		if (!id) {
 			continue;
@@ -44,10 +47,8 @@ function list(selector, num_parents) {
 function run() {
 	// Subscriptions list
 	list('div.yt-lockup-video h3.yt-lockup-title a.yt-uix-sessionlink', 2);
-	// Subscriptions list - September 2016
-	//list('ytd-grid-video-renderer div.ytd-grid-video-renderer a.ytd-video-meta-block', 2);
 	// Subscriptions list, mobile - August 2017
-	list('ytd-grid-video-renderer .ytd-grid-video-renderer', 2);
+	list('.ytd-grid-video-renderer .ytd-grid-video-renderer', 2);
 	
 	// Suggestions sidebar list
 	list('ul.video-list li.video-list-item a.yt-uix-sessionlink', 2);
