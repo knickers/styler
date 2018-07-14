@@ -1,5 +1,5 @@
 @media print {
-  .container-fluid.headerBar,
+	.container-fluid.headerBar,
 	.container-fluid.titleBar > .container > .row > .col-md-3,
 	#timelogs_wrapper > .DTTT_container,
 	#timelogs_filter,
