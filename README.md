@@ -21,9 +21,3 @@ I hate sticky navs with a passion. Remove the sticky nav!
 This adds links to the full size images of the Utah special group licence plates from this page: [http://dmv.utah.gov/plates/special-group](http://dmv.utah.gov/plates/special-group)
 
 ![Special plates example](https://raw.githubusercontent.com/knickers/styler/master/img/utah-special-plates.png)
-
-### Municipal Online Payments
-
-This eleminates a ton of empty space near the top of the page.
-
-![Municipal online payments example 1](https://raw.githubusercontent.com/knickers/styler/master/img/municipal-online-payment-1.png) ![Municipal online payments example 2](https://raw.githubusercontent.com/knickers/styler/master/img/municipal-online-payment-2.png)
