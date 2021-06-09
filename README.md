@@ -1,6 +1,10 @@
-# styler
+# Website Injector Scripts and Styles
 
-This is a collection of scripts I use in the google chrome [styler extension](https://chrome.google.com/webstore/detail/styler/bogdgcfoocbajfkjjolkmcdcnnellpkb).
+This is a collection of scripts and styles I use with a browser injector plugin.
+
+### Amazon
+
+Adds a keyboard shortcut to focus the search bar when the slash "/" key is pressed.
 
 ### YouTube
 
