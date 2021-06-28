@@ -76,7 +76,7 @@ function run() {
 	}
 }
 
-jQuery(function($) {
+document.addEventListener('DOMContentLoaded', function() {
 	setTimeout(run, 1000);
 	
 	// YouTube asynchronous page navigation.
