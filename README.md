@@ -12,6 +12,13 @@ This adds a link to the embedded version of videos, so they are watchable in ful
 
 ![YouTube example](https://raw.githubusercontent.com/knickers/styler/master/img/youtube-1.png)
 
+### Vimeo
+
+Add playback speed hotkeys to match YouTube's keys.
+
+* `<` slow down playback by 25%.
+* `>` speed up playback by 25%.
+
 ### Kickstarter
 
 I hate sticky navs with a passion. Remove the sticky nav!
